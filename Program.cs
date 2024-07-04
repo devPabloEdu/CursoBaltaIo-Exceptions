@@ -13,8 +13,10 @@ namespace CursoBaltaIo
                 //System.IndexOutOfRangeException
                 Console.WriteLine(arr[index]);
             }
-            } catch {
+            } catch(Exception ex) {
                 Console.WriteLine("ops, algo deu errado");
+                Console.WriteLine(ex.InnerException);
+                Console.WriteLine(ex.Message);
             }
             
             

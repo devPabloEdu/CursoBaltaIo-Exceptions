@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CursoBaltaIo-Exceptions")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c9e2431fc273b40d0df9578c8920a51767ea028")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c06b4424a3a2d5c25d50638cb039fe0d87da1cbe")]
 [assembly: System.Reflection.AssemblyProductAttribute("CursoBaltaIo-Exceptions")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CursoBaltaIo-Exceptions")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

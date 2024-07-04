@@ -5,7 +5,19 @@ namespace CursoBaltaIo
     {
         static void Main(string[] args)
         {
-            Exception
+            var arr = new Array[3];
+
+            try {
+                for (var index = 0; index < 10; index++)
+            {
+                //System.IndexOutOfRangeException
+                Console.WriteLine(arr[index]);
+            }
+            } catch {
+                Console.WriteLine("ops, algo deu errado");
+            }
+            
+            
         } 
     }
 }

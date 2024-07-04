@@ -37,6 +37,10 @@ namespace CursoBaltaIo
                 Console.WriteLine("ops, algo deu errado");
                 Console.WriteLine(ex.InnerException);
                 Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                Console.WriteLine("chegou ao fim");
             }           
         } 
         private static void Cadastrar(string texto){

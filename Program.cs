@@ -14,7 +14,7 @@ namespace CursoBaltaIo
             //     Console.WriteLine(arr[index]);
             // }
 
-                Cadastrar("");
+                Cadastrar("aaaakjakjakja");
 
             }
             catch(IndexOutOfRangeException ex){
@@ -27,6 +27,12 @@ namespace CursoBaltaIo
                 Console.WriteLine(ex.InnerException);
                 Console.WriteLine(ex.Message);
             }
+            catch(MinhaException ex) {
+                Console.WriteLine(ex.InnerException);
+                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.QuandoAconteceu);
+                Console.WriteLine("exceção customizada!");
+            }
              catch(Exception ex) {
                 Console.WriteLine("ops, algo deu errado");
                 Console.WriteLine(ex.InnerException);
@@ -36,7 +42,17 @@ namespace CursoBaltaIo
         private static void Cadastrar(string texto){
             if(string.IsNullOrEmpty(texto)){
                 throw new ArgumentNullException("O texto não pode ser nulo ou vazio");
+                throw new MinhaException(DateTime.Now);
+
             }
         } 
+        public class MinhaException : Exception
+        {
+            public MinhaException(DateTime date)
+            {
+                QuandoAconteceu = date;
+            }
+            public DateTime QuandoAconteceu {get; set;}
+        }
     }
 }
